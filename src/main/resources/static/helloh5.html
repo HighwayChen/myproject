@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:white-space="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<script type="text/javascript">
+    /*function getElements(){
+        var cont1 = document.getElementById("con");
+        alert(cont1);
+    }*/
+
+</script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <div align="center">
+        <h1 align=“center" >研究生院信息更新监控系统</h1>
+    </div>
+    <div align="left" class="form-group">
+        <input type="text"  width="100px" />
+
+            <button class="btn btn-info" type="button">搜索</button>
+
+    </div>
+    <div>
+        <table class="contents" align="center" border="1px">
+            <tr align="center">
+                <td align="center">编号</td>
+                <td align="center">学校</td>
+                <td align="center">内容</td>
+                <td align="center">日期</td>
+                <td align="center" width="30">更新</td>
+            </tr>
+            <form action="/index/a" method="get" enctype="application/x-www-form-urlencoded">
+            <tr align="center">
+
+                    <td align="center">
+                        <input name="id" type="hidden" width="100px">1</input></td>
+                    <td align="center" name="schoolName">
+                        <input name = "schoolName" type="hidden">东南大学</input></td>
+                    <td align="center" name="con"><a href='http://yzb.seu.edu.cn/2018/0917/c6676a240717/page.htm' target='_blank' title='2019年硕士研究生考试招生专业一览表' >2019年硕士研究生考试招生专业一览表</a></td>
+                    <td align="center" name="date" style="background-color:#803a5e"><div style="" white-space:nowrap>2018-10-11</div></td>
+                    <td align="center" width="80"><button class="update" type="submit">更新</button></td>
+
+            </tr>
+            </form>
+        </table>
+    </div>
+
+</body>
+</html>

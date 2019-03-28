@@ -1,0 +1,25 @@
+# The @activeProfile@ will be filtered by gradle build parameter: gradle clean war -Pprofiles=production
+# You must add the 'clean' build command, if you don't edit this yml file. Otherwise, the profiles change
+# will not work. If no profiles specified, the 'default' will be used.
+# Database base configuration
+server:
+
+  port: 8084
+
+
+druid:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    validationQuery: SELECT 1 FROM DUAL
+    mapperLocations: classpath*:com.yuekao.rank.db.mapper/*.xml
+    url: jdbc:mysql://localhost:3306/kaoyanInfo?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: debian-sys-maint
+    password: d7qOQpBcaz0a3fNn
+spring:
+  mvc:
+    view:
+      # 页面默认前缀目录
+      prefix: /WEB-INF/jsp/
+      # 响应页面默认后缀
+      suffix: .jsp
+
